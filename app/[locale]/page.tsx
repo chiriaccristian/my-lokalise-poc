@@ -1,8 +1,7 @@
 import HomePage from '@/components/HomePage';
 
-// Ensure both locales are statically generated so translations change with the URL
 export function generateStaticParams() {
-  return [{locale: 'en'}, {locale: 'ro'}];
+  return [{locale: 'en'}, {locale: 'ro'}, {locale: 'fr'}];
 }
 
 export default function Home() {

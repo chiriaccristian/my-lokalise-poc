@@ -3,7 +3,7 @@
 import {usePathname, useRouter} from 'next/navigation';
 import {ChangeEvent, useMemo, useTransition} from 'react';
 
-const locales = ['en', 'ro'] as const;
+const locales = ['en', 'ro', 'fr'] as const;
 
 type Locale = typeof locales[number];
 
@@ -43,6 +43,7 @@ export default function LanguageSwitcher() {
       >
         <option value="en">Engleza</option>
         <option value="ro">Romana</option>
+        <option value="fr">Franceza</option>
       </select>
     </div>
   );
